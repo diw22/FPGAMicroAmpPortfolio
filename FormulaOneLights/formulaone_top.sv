@@ -32,12 +32,7 @@ clktick div500 (    .clk(MAX10_CLK1_50),
                     .N(16'd499),
                     .tick(tick_halfs)
                     );
-//clktick div4 (    .clk(MAX10_CLK1_50),
-//                    .rst(1'b0),
-//                    .en(tick_halfs),
-//                    .N(16'd3),
-//                    .tick(tick_2sec)
-//                    );
+
 
 fsm fsm_formone (
 
@@ -85,17 +80,9 @@ countingreaction reaction0 ( 	.reactiontrigger(reactiontrigger),
 										
 										
 logic[3:0] BCD0, BCD1, BCD2, BCD3, BCD4;
-//, HEXWORD0, HEXWORD1, HEXWORD2, HEXWORD3, HEXWORD4, DISP0, DISP1, DISP2, DISP3, DISP4;
 
-//outputdesign designedoutput (
-//												.reaction_time(reaction_time),
-//												.clk(tick_ms),
-//												.HEXWORD0(HEXWORD0),
-//												.HEXWORD1(HEXWORD1),
-//												.HEXWORD2(HEXWORD2),
-//												.HEXWORD3(HEXWORD3),
-//												.HEXWORD4(HEXWORD4),
-//												);
+
+
 
 bin2bcd_16 BCDcount (.x(reaction_time),
                 .BCD0(BCD0),
@@ -105,27 +92,7 @@ bin2bcd_16 BCDcount (.x(reaction_time),
                 .BCD4(BCD4)
 );
 
-//congratsdelay congratulatoradora (
-//										.congratstrigger(reactiontrigger),
-//										.clk(tick_2sec),
-//										.rst(~KEY[1]),
-//										.BCD0(BCD0),
-//										.BCD1(BCD1),
-//										.BCD2(BCD2),
-//										.BCD3(BCD3),
-//										.BCD4(BCD4),
-//										.HEXWORD0(HEXWORD0),
-//										.HEXWORD1(HEXWORD1),
-//										.HEXWORD2(HEXWORD2),
-//										.HEXWORD3(HEXWORD3),
-//										.HEXWORD4(HEXWORD4),
-//										.DISP0(DISP0),
-//										.DISP1(DISP1),
-//										.DISP2(DISP2),
-//										.DISP3(DISP3),
-//										.DISP4(DISP4)
-//										);
-//										
+
 
 hexto7seg SEG0 (.out(HEX0), .in(BCD0));
 hexto7seg SEG1 (.out(HEX1), .in(BCD1));
