@@ -1,4 +1,5 @@
 **#FormulaOneLights**
+
 The specification of this circuit is:
 
 The circuit is triggered (or started) by pressing KEY[1];
