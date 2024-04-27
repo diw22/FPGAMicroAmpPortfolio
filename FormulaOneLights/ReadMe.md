@@ -1,4 +1,4 @@
-**#FormulaOneLights**
+**FormulaOneLights**
 
 The specification of this circuit is:
 
