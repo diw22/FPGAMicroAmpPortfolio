@@ -17,9 +17,7 @@ module processor (
 	parameter 		DAC_OFFSET = 10'd512;
 
 	assign x = data_in[9:0] - ADC_OFFSET;		// x is input in 2's complement
-	
-	// This part should include your own processing hardware 
-	// ... that takes x to produce y
+
 
 	
 
