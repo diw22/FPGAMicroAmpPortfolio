@@ -1,2 +1,3 @@
 # FPGAMicroAmpPortfolio
-I have uploaded files, a combination of those provided and taught by my professor and my own designs, to better explain my experience with FPGAs. The first folder is called FormulaOneLights, which was a combination of modules to incrementally turn on some LEDs to simulate Formula One lights. The overall design is further explained in the branch. The second folder is called VariableDelay, in which I programmed the FPGA to take an analog input signal, and, after analog to digital conversion, use digital signal processing to output the original signal summed with scaled and delayed repetitions of the output, which was then converted using a DtoA converter and outputted to speakers.
+Most important folder is the FPGA Maths tool, using hardware to lower processing times to visualise a complex mathematical function.
+The second folder contains miscellaneous FPGA projects I have undertaken.
